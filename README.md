@@ -14,7 +14,9 @@
 
     https://code.visualstudio.com/docs/languages/markdown
 
+* 看一下 **nodeExample** 資料夾內的 README 來看如何跑 node http server
 
+	[Node Server README](./nodeExample)
 
 
 ## 一些 @txshon 老師喜歡的 JS plugin
