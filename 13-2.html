@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Test(){
+        　var var1='A'; //區域變數
+        　var2='B'; // 全域變數
+        　document.write('var1 in function='+var1+'<br>');　// 輸出 A
+        　document.write('var2 in function='+var2+'<hr>');　// 輸出 B
+        }
+        var var3='C';
+        
+        Test();　// 呼叫 Test function
+        
+        document.write('var2 not in function='+var2+'<br>');　// 輸出 B
+        document.write('var3 not in function='+var3+'<hr>');　// 輸出 C
+    </script>
+</body>
+</html>

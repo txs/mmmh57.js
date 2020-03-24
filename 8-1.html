@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id='p'></p>
+    <script>
+        let ele = document.getElementById('p')
+        let a = prompt('a多少？')
+        if(a<5)ele.textContent = '小於五'
+        else if(a<10) ele.textContent = '五到十'
+        else ele.textContent = '大於十'
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-1 Example: Page for document.geElementById</title>
+</head>
+<body>
+    <script>
+        function changeColor(newColor) {
+            var elem = document.getElementById("changeText")
+            elem.style.color = newColor
+        }
+    </script>
+    <p>這是一個 "document.geElementById" 的 Js Demo</p>
+    <p>點擊以下按鈕來改變下面的文字</p>
+    <button onclick="changeColor('blue')">blue</button>
+    <button onclick="changeColor('red')">red</button>
+    <button onclick="changeColor('black')">back to black</button>
+    <p id='changeText'>按一下按鈕來改變這段文字</p>
+</body>
+</html>

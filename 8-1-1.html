@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id='score' onchange="doCal()" onkeyup="doCal()" min='0' max="100"><br>
+    <div id="info"></div>
+    <script>
+        let score   = document.querySelector('#score')
+        let info    = document.querySelector('#info')
+
+        function doCal(){
+            let s = score.value *1
+            console.log(s)
+            let g = 'F'
+            if(s>=90){
+                g = 'A'
+            }else if (s>=80){
+                g = 'B'
+            }else if (s>=70){
+                g = 'C'
+            }else if (s>=60){
+                g = 'D'
+            }else {
+                g = 'F'
+            }
+            info.textContent = g
+        }
+    </script>
+</body>
+</html>

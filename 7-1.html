@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>This is JS Intro</title>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=Big5" /> -->
+<meta name="author" content="作者名字" />
+<meta name="keyword" content="希望被查尋的關鍵字" />
+
+</script>
+</head>
+
+<body>
+    <input type="text" id="my-input"><button onclick="addInfo()">新增</button>
+    <div id="container" style="margin-top: 20px;"></div>
+    <script>
+        let container = document.querySelector('#container')
+
+        function addInfo(){
+            container.innerHTML += <div class="info">${my_input.value}</div>;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rect{
+            position: relative;
+            width: 800px;
+            height: 600px;
+            background-color: #fff;
+        }
+        .ball {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #f22;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="number" id='score' onchange="doCal()" onkeyup="doCal()" min='0' max="100"><br> -->
+    <div id="rect"></div>
+    <script>
+        const rect = document.querySelector('#rect')
+        let b, i, unitRad, ballNum
+        ballNum = 12
+        unitRad = 2* Math.PI / ballNum
+        for (let i = 0; i < ballNum; i++) {
+            b = document.createElement('div')
+            b.className     = 'ball'
+            b.style.left    = 100   +100*Math.random()+'px'
+            b.style.top     = 100   +100*Math.random()+'px'
+            rect.appendChild(b)
+        }
+        
+    </script>
+</body>
+</html>

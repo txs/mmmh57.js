@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id='score' onchange="doCal()" onkeyup="doCal()" min='0' max="100"><br>
+    <div id="info"></div>
+    <script>
+        let score   = document.querySelector('#score')
+        let info    = document.querySelector('#info')
+
+        let i = 0
+        while(i<5){
+            info.innerHTML += i + "<br>";
+            i++
+        }
+        
+    </script>
+</body>
+</html>

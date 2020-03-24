@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title> Javascript QuerySelector 選擇器</title>
+  </head>
+  <body>
+<h2> Query Selector: 使用 CSS 語法的 DOM 選擇器</h2>
+<!--First Div-->
+<div id="first">
+  <p>First <em> Example</em> paragraph</p>
+  <p>Second paragraph<em> Example</em></p>
+  <p><em>Example</em> of third paragraph</p>
+</div><!--End of First Div-->
+<!--Second Div-->
+<div id="second">
+  <p>First <em> Example </em> para</p>
+  <p>second para<em>Example</em></p>
+  <p><em>Example </em> third para</p>
+</div>
+    <script>
+        //Single QuerySlector returns the first child that it finds
+        var paragraph = document.querySelector('p');
+        paragraph.style.color = 'green';
+        //the descendent selector
+        var italic = document.querySelector('p em');
+        italic.style.color = 'red';
+    </script>
+  </body>
+</html>

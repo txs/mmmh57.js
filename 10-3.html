@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #rect {
+      position: relative;
+      width: 800px;
+      height: 600px;
+      background-color: #fff;
+    }
+
+    .ball {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #f22;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <input type="number" id='score' onchange="doCal()" onkeyup="doCal()" min='0' max="100"><br> -->
+  <div id="rect"></div>
+  <script>
+    const rect = document.querySelector('#rect')
+    let s
+    const food = ['apple', 'banana', 'coke']
+
+    food.pop()
+    rect.innerHTML    += 'Pop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: '
+    for (i=0;i<food.length; i++) {
+      rect.innerHTML  += `${food[i]} `
+    }
+    rect.innerHTML    += '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 將最後一個值彈出'
+    rect.innerHTML    +='<br>' //apple, banana
+
+    food.push('cake')
+    rect.innerHTML    += 'Push cake : '
+    for (i=0;i<food.length; i++) {
+      rect.innerHTML  += `${food[i]} `
+    }
+    rect.innerHTML    += '// 從最後面推入一個值'
+    rect.innerHTML    +='<br>' //apple, banana, cake
+
+    food.reverse()
+    rect.innerHTML += 'Reverse &nbsp;&nbsp;&nbsp;: '
+    for (i=0;i<food.length; i++) {
+      rect.innerHTML += `${food[i]} `
+    }
+    rect.innerHTML    += '// 將順序反轉'
+    rect.innerHTML+='<br>' //cake, banana, apple
+
+    food.shift()
+    rect.innerHTML    += 'Shift '
+    for(i=0;i<8;i++){
+      rect.innerHTML  += '&nbsp;'
+    }
+    rect.innerHTML    += ': '
+    for (i=0;i<food.length; i++) {
+      rect.innerHTML  += `${food[i]} `
+    }
+    for(i=0;i<9;i++){
+      rect.innerHTML  += '&nbsp;'
+    }
+    rect.innerHTML    += '// 從最前面一個值取出'
+    rect.innerHTML    +='<br>' //banana, apple
+
+    food.sort()
+    rect.innerHTML    += 'Sort '
+    for(i=0;i<9;i++){
+      rect.innerHTML  += '&nbsp;'
+    }
+    rect.innerHTML    += ': '
+    for (i=0;i<food.length; i++) {
+      rect.innerHTML  += `${food[i]} `
+    }
+    for(i=0;i<9;i++){
+      rect.innerHTML  += '&nbsp;'
+    }
+    rect.innerHTML    += '// 排序'
+    rect.innerHTML    +='<br>' //banana, apple
+
+  </script>
+</body>
+
+</html>
