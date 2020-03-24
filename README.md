@@ -15,3 +15,8 @@
     https://code.visualstudio.com/docs/languages/markdown
 
 
+
+
+## 一些 @txshon 老師喜歡的 JS plugin
+
+* meteor.js : 2012 在 google plus 看到，從 0.2 版開始寫，不過在 2014-15 年 https://www.meteor.com 
